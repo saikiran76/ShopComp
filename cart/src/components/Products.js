@@ -3,6 +3,7 @@ import ProductItem from './Item';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../utils/CartSlice';
 import Header from './Header';
+import { Bar } from './Bar';
 
 const products = [
   { id: 1, name: 'ORI GIMBER 700ml', price: 24.95 },
@@ -25,6 +26,7 @@ const ProductList = () => {
     return (
         <div className="m-2 w-2/3 bg-gray-50 h-screen">
             <Header/>
+            <Bar/>
             <div className='product-list flex flex-wrap gap-3 overflow-y-auto'>
                 {products.map((product) => (
                     <ProductItem key={product.id} product={product} addToCart={() => dispatch(addItem(product))} />
