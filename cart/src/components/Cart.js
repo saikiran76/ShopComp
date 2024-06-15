@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Button } from './Button';
+import { ProfileBar } from './ProfileBar';
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart.cartItems);
@@ -13,6 +14,7 @@ const Cart = () => {
   return (
     <div className="cart w-1/3 border-l p-4">
       {/* <h2 className="text-2xl font-semibold mb-4">Cart</h2> */}
+      <ProfileBar/>
       {cart.map((item, index) => (
         <div key={index} className="mb-2 mt-2">
           <p className='flex justify-between font-semibold'>{item.name}  <span>${item.price.toFixed(2)}</span></p>
