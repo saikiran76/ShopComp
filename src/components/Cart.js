@@ -25,7 +25,7 @@ const Cart = () => {
       <p className='flex justify-between items-center text-gray-300 mt-1'>Gratuity: <span>${gratuity.toFixed(2)}</span></p>
       <h3 className="text-xl font-bold mt-2 flex justify-between items-center">Total <span>${total.toFixed(2)}</span></h3>
       <div className='mt-[10em]'>
-        <Button name="Add Voucher code" width="w-full" border="border-dashed border-2 border-zinc-300" bg='bg-gray-300' mar="mb-1"/>
+        <Button name="Add Voucher code" col='text-zinc-400' width="w-full" border="border-dashed border-2 border-zinc-300" bg='bg-white' mar="mb-1"/>
         <Button name="Print Receipt" width="w-full"/>
       </div>
     </div>
