@@ -27,7 +27,7 @@ const ProductList = () => {
     const productsToDisplay = searchResults.length > 0 ? searchResults : items;
     
     return (
-        <div className="m-2 w-2/3 bg-gray-50 h-screen">
+        <div className="m-2 w-full lg:w-2/3 bg-gray-50 h-screen">
             <Header/>
             <Bar/>
             <div className='product-list flex flex-wrap gap-3 overflow-y-auto h-screen'>

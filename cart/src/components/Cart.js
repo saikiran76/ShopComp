@@ -12,7 +12,7 @@ const Cart = () => {
   const total = subtotal - discount + gratuity;
 
   return (
-    <div className="cart w-1/3 border-l p-4">
+    <div className="cart w-full lg:w-1/3 border-l p-4 h-[120%]">
       {/* <h2 className="text-2xl font-semibold mb-4">Cart</h2> */}
       <ProfileBar/>
       {cart.map((item, index) => (
