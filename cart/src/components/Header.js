@@ -3,6 +3,7 @@ import { Button } from "./Button";
 import { LuSettings2 } from "react-icons/lu";
 import { searchItem } from "../utils/CartSlice";
 import { useDispatch } from "react-redux";
+import { sortItemsByPrice } from "../utils/CartSlice";
 
 const Header = () => {
   const [searchQuery, setSearchQuery]=useState('');
@@ -24,7 +25,7 @@ const Header = () => {
         dispatch(searchItem(searchQuery))
         console.log("dispatched", searchQuery)
         }}/>
-      <div className="p-3 bg-white cursor-pointer rounded ml-[14em]">
+      <div className="p-3 bg-white cursor-pointer rounded ml-[14em]" onClick={()=>dispatch(sortItemsByPrice())}>
         <LuSettings2/>
       </div>
     </header>
