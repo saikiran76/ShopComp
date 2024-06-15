@@ -1,12 +1,18 @@
+import { Button } from "./Button";
+import { LuSettings2 } from "react-icons/lu";
+
 const Header = () => {
   return (
-    <header className="bg-gray-100 p-4 flex items-center font-sans">
+    <header className="bg-gray-100 p-4 flex items-center">
       <input
         type="text"
         placeholder="Search all product here..."
         className="w-1/2 p-2 border border-gray-300 rounded"
       />
-      <button className="bg-orange-500 text-white p-3 text-sm w-[6em] rounded ml-2">Search</button>
+      <Button name="Search" mar="ml-2" pad="px-5 py-2"/>
+      <div className="p-3 bg-white cursor-pointer rounded ml-[14em]">
+        <LuSettings2/>
+      </div>
     </header>
   );
 };
